@@ -1,6 +1,6 @@
-# BuildAdmin 前端框架
+# Sinabuddy 订单管理系统
 
-> 基于 Vue3 + TypeScript + Vite + Element Plus 的现代化前端开发框架
+> 基于 BuildAdmin 框架的 Vue3 + TypeScript 订单管理解决方案
 
 ## 🌟 项目特点
 
@@ -157,8 +157,9 @@ VITE_AXIOS_BASE_URL = 'https://your-api-domain.com'
 
 ### 组件开发
 
-```vue
+``vue
 <template>
+
   <div class="my-component">
     <el-button @click="handleClick">{{ $t("common.confirm") }}</el-button>
   </div>
@@ -174,11 +175,12 @@ const handleClick = () => {
   console.log("Button clicked");
 };
 </script>
+
 ```
 
 ### API调用
 
-```typescript
+``typescript
 import { http } from "@/utils/http";
 
 interface User {
@@ -194,21 +196,22 @@ export const getUserList = (): Promise<User[]> => {
 
 ### 状态管理
 
-```typescript
+``typescript
 import { defineStore } from "pinia";
 
 export const useUserStore = defineStore("user", {
-  state: () => ({
-    userInfo: null as User | null,
-    token: "",
-  }),
+state: () => ({
+userInfo: null as User | null,
+token: "",
+}),
 
-  actions: {
-    setUserInfo(user: User) {
-      this.userInfo = user;
-    },
-  },
+actions: {
+setUserInfo(user: User) {
+this.userInfo = user;
+},
+},
 });
+
 ```
 
 ## 🚀 部署指南
@@ -221,11 +224,13 @@ export const useUserStore = defineStore("user", {
 
 ### Docker部署
 
-```dockerfile
+```
+
 FROM nginx:alpine
 COPY dist/ /usr/share/nginx/html/
 COPY nginx.conf /etc/nginx/nginx.conf
 EXPOSE 80
+
 ```
 
 ## 🤝 贡献指南
@@ -257,3 +262,4 @@ EXPOSE 80
 ---
 
 ⭐ 如果这个项目对您有帮助，请给它一个Star!
+```

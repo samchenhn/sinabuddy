@@ -1,7 +1,7 @@
 {
-  "name": "buildadmin-frontend",
+  "name": "sinabuddy-order-management",
   "version": "2.3.3",
-  "description": "BuildAdmin 前端框架 - 基于Vue3 + TypeScript + Vite + Element Plus的现代化前端开发框架",
+  "description": "Sinabuddy订单管理系统 - 基于BuildAdmin框架的Vue3 + TypeScript订单管理解决方案",
   "license": "Apache-2.0",
   "type": "module",
   "scripts": {
