@@ -44,3 +44,7 @@ components.d.ts
 # Server docs symlink
 server-docs
 server-docs/
+
+# Reference directory
+reference
+reference/
