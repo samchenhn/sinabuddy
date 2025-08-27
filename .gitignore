@@ -48,3 +48,6 @@ server-docs/
 # Reference directory
 reference
 reference/
+
+# Analysis documents
+REFERENCE_ANALYSIS.md
